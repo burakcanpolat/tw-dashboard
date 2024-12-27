@@ -8,6 +8,7 @@ import TractionTab from '@/components/tabs-content/TractionTab';
 import FinancialProjectionsTab from '@/components/tabs-content/FinancialProjectionsTab';
 import TeamTab from '@/components/tabs-content/TeamTab';
 import CallToActionTab from '@/components/tabs-content/CallToActionTab';
+import FutureFinancialGraphsTab from '@/components/tabs-content/FutureFinancialGraphsTab';
 
 const FutureStatus = () => {
   return (
@@ -38,6 +39,7 @@ const FutureStatus = () => {
               <TabsTrigger value="market">Market Opportunity</TabsTrigger>
               <TabsTrigger value="traction">Traction & Validation</TabsTrigger>
               <TabsTrigger value="financial">Financial Projections</TabsTrigger>
+              <TabsTrigger value="future-financial">Future Financial Graphs</TabsTrigger>
               <TabsTrigger value="team">Team</TabsTrigger>
               <TabsTrigger value="call-to-action">Call to Action</TabsTrigger>
             </TabsList>
@@ -64,6 +66,10 @@ const FutureStatus = () => {
 
             <TabsContent value="financial">
               <FinancialProjectionsTab />
+            </TabsContent>
+
+            <TabsContent value="future-financial">
+              <FutureFinancialGraphsTab />
             </TabsContent>
 
             <TabsContent value="team">
